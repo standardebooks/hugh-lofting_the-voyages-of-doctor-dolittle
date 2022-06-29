@@ -1,2 +1,108 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
+
+/* All dedications */
+section[epub|type~="dedication"]{
+	font-style: italic;
+	text-align: center;
+}
+
+section[epub|type~="dedication"] > *{
+	display: inline-block;
+	margin: auto;
+	margin-top: 3em;
+	max-width: 80%;
+}
+
+@supports(display: flex){
+	section[epub|type~="dedication"]{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: calc(98vh - 3em);
+		padding-top: 3em;
+	}
+
+	section[epub|type~="dedication"] > *{
+		margin: 0;
+	}
+}
+/* End all dedications */
+
+section[epub|type~="dedication"] div:nth-child(1){
+	text-indent: -4.5em;
+}
+
+section[epub|type~="dedication"] div:nth-child(2){
+	text-indent: -1.5em;
+}
+
+section[epub|type~="dedication"] div:nth-child(3){
+	text-indent: 1.5em;
+}
+
+section[epub|type~="dedication"] div:nth-child(4){
+	text-indent: 4.5em;
+}
+
+[epub|type~="z3998:song"] p,
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:song"] p > span,
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:song"] p > span + br,
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+[epub|type~="z3998:song"] p + p{
+	margin-top: 1em;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:song"] header,
+[epub|type~="z3998:verse"] header{
+	margin: 1em;
+}
+
+[epub|type~="z3998:song"] header p,
+[epub|type~="z3998:verse"] header p{
+	text-align: center;
+}
+
+[epub|type~="z3998:song"] [epub|type~="title"]{
+	font-variant: small-caps;
+}
+
+[epub|type~="z3998:verse"] [epub|type~="subtitle"]{
+	font-style: italic;
+	margin-top: 0;
+}
+
+#chapter-4-2 div{
+	margin: 1em 0;
+}
+
+#chapter-4-2 header{
+	font-variant: small-caps;
+	margin: 1em 0;
+}
+
+#chapter-4-2 div:last-of-type p{
+	margin-left: 1em;
+	text-indent: -1em;
+}

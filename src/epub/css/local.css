@@ -31,19 +31,27 @@ section[epub|type~="dedication"] > *{
 }
 /* End all dedications */
 
-section[epub|type~="dedication"] div:nth-child(1){
+q{
+	font-style: italic;
+}
+
+section[epub|type~="dedication"] span{
+	display: block;
+}
+
+section[epub|type~="dedication"] span:nth-child(1){
 	text-indent: -4.5em;
 }
 
-section[epub|type~="dedication"] div:nth-child(2){
+section[epub|type~="dedication"] span:nth-child(2){
 	text-indent: -1.5em;
 }
 
-section[epub|type~="dedication"] div:nth-child(3){
+section[epub|type~="dedication"] span:nth-child(3){
 	text-indent: 1.5em;
 }
 
-section[epub|type~="dedication"] div:nth-child(4){
+section[epub|type~="dedication"] span:nth-child(4){
 	text-indent: 4.5em;
 }
 

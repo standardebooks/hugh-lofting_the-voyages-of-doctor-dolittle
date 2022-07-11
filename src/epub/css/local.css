@@ -31,45 +31,24 @@ section[epub|type~="dedication"] > *{
 }
 /* End all dedications */
 
-q{
-	font-style: italic;
-}
-
-section[epub|type~="dedication"] span{
-	display: block;
-}
-
-section[epub|type~="dedication"] span:nth-child(1){
-	text-indent: -4.5em;
-}
-
-section[epub|type~="dedication"] span:nth-child(2){
-	text-indent: -1.5em;
-}
-
-section[epub|type~="dedication"] span:nth-child(3){
-	text-indent: 1.5em;
-}
-
-section[epub|type~="dedication"] span:nth-child(4){
-	text-indent: 4.5em;
-}
-
-[epub|type~="z3998:song"] p,
-[epub|type~="z3998:verse"] p{
+[epub|type~="dedication"] p,
+[epub|type~="z3998:poem"] p,
+[epub|type~="z3998:song"] p{
 	text-align: initial;
 	text-indent: 0;
 }
 
-[epub|type~="z3998:song"] p > span,
-[epub|type~="z3998:verse"] p > span{
+[epub|type~="dedication"] p > span,
+[epub|type~="z3998:poem"] p > span,
+[epub|type~="z3998:song"] p > span{
 	display: block;
 	padding-left: 1em;
 	text-indent: -1em;
 }
 
-[epub|type~="z3998:song"] p > span + br,
-[epub|type~="z3998:verse"] p > span + br{
+[epub|type~="dedication"] p > span + br,
+[epub|type~="z3998:poem"] p > span + br,
+[epub|type~="z3998:song"] p > span + br{
 	display: none;
 }
 
@@ -82,13 +61,23 @@ p span.i1{
 	text-indent: -1em;
 }
 
-[epub|type~="z3998:song"] header,
-[epub|type~="z3998:verse"] header{
+p span.i2{
+	padding-left: 3em;
+	text-indent: -1em;
+}
+
+p span.i3{
+	padding-left: 4em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] header,
+[epub|type~="z3998:song"] header{
 	margin: 1em;
 }
 
-[epub|type~="z3998:song"] header p,
-[epub|type~="z3998:verse"] header p{
+[epub|type~="z3998:poem"] header p,
+[epub|type~="z3998:song"] header p{
 	text-align: center;
 }
 
@@ -96,13 +85,14 @@ p span.i1{
 	font-variant: small-caps;
 }
 
-[epub|type~="z3998:verse"] [epub|type~="subtitle"]{
+[epub|type~="z3998:poem"] [epub|type~="title"]{
 	font-style: italic;
 	margin-top: 0;
 }
 
-#chapter-4-2 div{
-	margin: 1em 0;
+#chapter-4-2 blockquote{
+	margin-left: 0;
+	margin-right: 0;
 }
 
 #chapter-4-2 header{
@@ -110,7 +100,40 @@ p span.i1{
 	margin: 1em 0;
 }
 
-#chapter-4-2 div:last-of-type p{
-	margin-left: 1em;
-	text-indent: -1em;
+table{
+	border-collapse: collapse;
+	margin: 1em auto;
+	width: 100%;
+}
+
+table tr:first-child td{
+	padding-top: 0;
+}
+
+table tr:last-child td{
+	padding-bottom: 0;
+}
+
+table td{
+	padding: .5em;
+	vertical-align: top;
+}
+
+table td:last-child{
+	padding-right: 0;
+}
+
+table td:first-child{
+	padding-left: 0;
+}
+
+table td[epub|type~="z3998:persona"]{
+	hyphens: none;
+	-epub-hyphens: none;
+	text-align: right;
+	width: 20%;
+}
+
+[epub|type~="z3998:persona"]{
+	font-variant: all-small-caps;
 }

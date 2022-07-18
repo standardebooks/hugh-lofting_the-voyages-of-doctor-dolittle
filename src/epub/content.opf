@@ -46,13 +46,13 @@
 		<meta id="collection-1" property="belongs-to-collection">Doctor Dolittle</meta>
 		<meta property="collection-type" refines="#collection-1">series</meta>
 		<meta property="group-position" refines="#collection-1">2</meta>
-		<meta id="collection-2" property="belongs-to-collection">Newbery Medal</meta>
+		<meta id="collection-2" property="belongs-to-collection">Newbery Medal Winners</meta>
 		<meta property="collection-type" refines="#collection-2">series</meta>
 		<meta property="group-position" refines="#collection-2">2</meta>
 		<dc:description id="description">A young boy begins his apprenticeship with Doctor Dolittle, accompanying him on a series of adventures in search of a floating island and a missing naturalist.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
 			&lt;p&gt;After discovering an injured squirrel, young Tommy Stubbins is introduced to Doctor Dolittle. Enamored by the Doctor’s ability to speak with animals and his wonderful house full of creatures from around the world, Tommy convinces the Doctor to take him as an apprentice. Together with the Polynesia the parrot, Jip the dog, and an African prince named Bumpo, they set out in search of the famed naturalist Long Arrow, son of Golden Arrow, who has gone missing.&lt;/p&gt;
-			&lt;p&gt;This is the second book in &lt;a href="https://standardebooks.org/ebooks/hugh-lofting"&gt;Hugh Lofting’s&lt;/a&gt; &lt;a href="https://standardebooks.org/collections/doctor-dolittle"&gt;Doctor Dolittle series&lt;/a&gt;. It was awarded the 1923 Newbery Medal.&lt;/p&gt;
+			&lt;p&gt;This is the second book in &lt;a href="https://standardebooks.org/ebooks/hugh-lofting"&gt;Hugh Lofting’s&lt;/a&gt; &lt;a href="https://standardebooks.org/collections/doctor-dolittle"&gt;Doctor Dolittle series&lt;/a&gt;. It was awarded the 1923 &lt;a href="https://standardebooks.org/collections/newbery-medal-winners"&gt;Newbery Medal&lt;/a&gt;.&lt;/p&gt;
 		</meta>
 		<dc:language>en-US</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/1154</dc:source>

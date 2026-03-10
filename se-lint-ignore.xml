@@ -2,11 +2,13 @@
 <se-lint-ignore>
 	<file path="chapter-2-1.xhtml">
 		<ignore code="s-023">
+			<line>12</line>
 			<reason>Title has unusual casing due to a boat name.</reason>
 		</ignore>
 	</file>
 	<file path="dedication.xhtml">
 		<ignore code="s-046">
+			<line>11</line>
 			<reason>Spans are being used in dedication to match source style.</reason>
 		</ignore>
 	</file>

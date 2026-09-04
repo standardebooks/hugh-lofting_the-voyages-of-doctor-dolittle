@@ -31,9 +31,9 @@
 		<dc:title id="title">The Voyages of Doctor Dolittle</dc:title>
 		<meta property="file-as" refines="#title">Voyages of Doctor Dolittle, The</meta>
 		<dc:subject id="subject-1">Fantasy literature</dc:subject>
-		<dc:subject id="subject-2">Animals -- Juvenile fiction</dc:subject>
-		<dc:subject id="subject-3">Voyages and travels -- Juvenile fiction</dc:subject>
-		<dc:subject id="subject-4">Human-animal communication -- Juvenile fiction</dc:subject>
+		<dc:subject id="subject-2">Animals--Juvenile fiction</dc:subject>
+		<dc:subject id="subject-3">Voyages and travels--Juvenile fiction</dc:subject>
+		<dc:subject id="subject-4">Human-animal communication--Juvenile fiction</dc:subject>
 		<meta property="authority" refines="#subject-1">LCSH</meta>
 		<meta property="term" refines="#subject-1">sh85047145</meta>
 		<meta property="authority" refines="#subject-2">LCSH</meta>
